@@ -25,7 +25,9 @@ function App() {
       nationality: "Indian",
     },
     {
-      ins: "Vellore Institute of Technology - Vellore (B.tech - IT) - 2017",
+      ins: "Vellore Institute of Technology - Vellore",
+      year: "2017",
+      stream: "B.Tech - IT",
       cgpa: 6.6,
     },
     {
@@ -61,17 +63,21 @@ function App() {
         {menuLabels.map((menuitem, index) => (
           <div key={index} className="menu-label">
             <div className="menu">
-              {menuitem.Label}
+              <p className="menu-labels">• {menuitem.Label}</p>
               {activeMenuId === menuitem.id ? (
-                <i
-                  className="fa-solid fa-minus"
-                  onClick={() => expandMenu(menuitem)}
-                ></i>
+                <div className="icon-wrapper">
+                  <i
+                    className="fa-solid fa-minus"
+                    onClick={() => expandMenu(menuitem)}
+                  ></i>
+                </div>
               ) : (
-                <i
-                  className="fa-solid fa-plus"
-                  onClick={() => expandMenu(menuitem)}
-                ></i>
+                <div className="icon-wrapper">
+                  <i
+                    className="fa-solid fa-plus"
+                    onClick={() => expandMenu(menuitem)}
+                  ></i>
+                </div>
               )}
             </div>
 
@@ -88,7 +94,9 @@ function App() {
                 )}
                 {menuitem.id === "1" && (
                   <div className="items-menu">
-                    <p>• Graduation: {myData[1].ins}</p>
+                    <p>• {myData[1].ins}</p>
+                    <p>• Year: {myData[1].year}</p>
+                    <p>• Domain: {myData[1].stream}</p>
                     <p>• CGPA: {myData[1].cgpa}</p>
                   </div>
                 )}
