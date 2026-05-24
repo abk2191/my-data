@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 600px;
-
-  gap: 100px;
+  gap: 40px;
   padding-top: 40px;
 }
 
@@ -13,6 +12,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-left: 20px;
 }
 
 .menu {
@@ -23,8 +23,8 @@
 }
 
 .icon-wrapper {
-  border: 1px solid black;
-  background-color: black;
+  border: 1px solid navy;
+  background-color: navy;
   color: white;
   height: 35px;
   width: 35px;
@@ -45,15 +45,17 @@ body {
 }
 
 .items-menu {
-  width: 400px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
   line-height: 1.6;
-  animation: bounceInDown; /* referring directlykeyframe declaration */
+  animation: bounceInLeft; /* referring directlykeyframe declaration */
   animation-duration: 0.3s; /* don't forget to set a duration! */
-  margin-left: 200px;
+  margin-left: 100px;
+  margin-top: 20px;
+  color: maroon;
 }
 
 p {
@@ -72,4 +74,20 @@ p {
 
 .menu-labels {
   font-weight: bold;
+  color: navy;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: navy;
+}
+
+.hr-line {
+  background-color: navy;
+  height: 1px;
+  width: 350px;
 }

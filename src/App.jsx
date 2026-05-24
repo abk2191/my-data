@@ -10,7 +10,7 @@ function App() {
   const menuLabels = [
     { Label: "Facts", id: "0" },
     { Label: "Education", id: "1" },
-    { Label: "Work", id: "2" },
+    { Label: "Work Experience", id: "2" },
     { Label: "Craft", id: "3" },
     { Label: "Personal", id: "4" },
   ];
@@ -18,7 +18,7 @@ function App() {
   const myData = [
     {
       name: "Abhishek kabi",
-      dob: "21/12/1991",
+      dob: "21/12/1991. (34 years old)",
       age: 34,
       nativePlace: "Cooch Behar, West Bengal",
       fname: "Chayan Kumar Kabi",
@@ -31,7 +31,7 @@ function App() {
       cgpa: 6.6,
     },
     {
-      Aegis: "Jio customer support.",
+      Aegis: "Jio customer support",
       DXC: "Technical Support L1",
       HP: "Technical Support L1",
       Quinnox: "Mainframe developer - rpg - as400",
@@ -60,10 +60,16 @@ function App() {
   return (
     <>
       <div className="main-container">
+        <div className="banner">
+          <h1>ABHISHEK KABI</h1>
+          <p>Full-Stack React / React Native Solution Architech.</p>
+          <p style={{ marginTop: "20px" }}>"Listen to the noise within..."</p>
+        </div>
+        <hr className="hr-line" />
         {menuLabels.map((menuitem, index) => (
           <div key={index} className="menu-label">
             <div className="menu">
-              <p className="menu-labels">• {menuitem.Label}</p>
+              <p className="menu-labels"> {menuitem.Label}</p>
               {activeMenuId === menuitem.id ? (
                 <div className="icon-wrapper">
                   <i
@@ -85,52 +91,120 @@ function App() {
               <div className="menu-content">
                 {menuitem.id === "0" && (
                   <div className="items-menu">
-                    <p>• Name: {myData[0].name}</p>
-                    <p>• DOB: {myData[0].dob}</p>
-                    <p>• Native Place: {myData[0].nativePlace}</p>
-                    <p>• Father's Name: {myData[0].fname}</p>
-                    <p>• Nationality: {myData[0].nationality}</p>
+                    <p>
+                      <strong>Name</strong>: {myData[0].name}.
+                    </p>
+                    <p>
+                      <strong>DOB</strong>: {myData[0].dob}.
+                    </p>
+                    <p>
+                      <strong>Native Place</strong>: {myData[0].nativePlace}.
+                    </p>
+                    <p>
+                      <strong>Father's Name</strong>: {myData[0].fname}.
+                    </p>
+                    <p>
+                      <strong>Nationality</strong>: {myData[0].nationality}.
+                    </p>
                   </div>
                 )}
                 {menuitem.id === "1" && (
                   <div className="items-menu">
-                    <p>• {myData[1].ins}</p>
-                    <p>• Year: {myData[1].year}</p>
-                    <p>• Domain: {myData[1].stream}</p>
-                    <p>• CGPA: {myData[1].cgpa}</p>
+                    <p>
+                      <strong>{myData[1].ins}.</strong>
+                    </p>
+                    <p>
+                      <strong>Year of passing: {myData[1].year}.</strong>
+                    </p>
+                    <p>
+                      <strong>Domain: {myData[1].stream}.</strong>
+                    </p>
+                    <p>
+                      <strong>CGPA: {myData[1].cgpa}.</strong>
+                    </p>
                   </div>
                 )}
                 {menuitem.id === "2" && (
                   <div className="items-menu">
-                    <div>• Aegis: {myData[2].Aegis}</div>
-                    <div>• DXC: {myData[2].DXC}</div>
-                    <div>• HP: {myData[2].HP}</div>
-                    <div>• Quinnox: {myData[2].Quinnox}</div>
-                    <div>• Concentrix: {myData[2].Concentrix}</div>
-                    <div>• Teleperformance: {myData[2].Teleperformance}</div>
-                    <div>• Amazon: {myData[2].Amazon}</div>
-                    <div>• CameoGlobal: {myData[2].CameoGlobal}</div>
-                    <div>• Alorica: {myData[2].Alorica}</div>
-                    <div>• Concentrix: {myData[2].Concentrix2}</div>
-                    <div>• Startek: {myData[2].Startek}</div>
-                    <div>• Alorica: {myData[2].Alorica2}</div>
+                    <div>
+                      <strong>1. Aegis</strong>: {myData[2].Aegis}{" "}
+                      <strong>(2017)</strong>.
+                    </div>
+                    <div>
+                      <strong>2. DXC</strong>: {myData[2].DXC}{" "}
+                      <strong>(2018)</strong>.
+                    </div>
+                    <div>
+                      <strong>3. HP</strong>: {myData[2].HP}{" "}
+                      <strong>(2018)</strong>.
+                    </div>
+                    <div>
+                      <strong>4. Quinnox</strong>: {myData[2].Quinnox}{" "}
+                      <strong>(2019)</strong>.
+                    </div>
+                    <div>
+                      <strong>5. Concentrix</strong>: {myData[2].Concentrix}{" "}
+                      <strong>(2019)</strong>.
+                    </div>
+                    <div>
+                      <strong>6. Teleperformance</strong>:{" "}
+                      {myData[2].Teleperformance} <strong>(2020)</strong>.
+                    </div>
+                    <div>
+                      <strong>7. Amazon</strong>: {myData[2].Amazon}{" "}
+                      <strong>(2020)</strong>.
+                    </div>
+                    <div>
+                      <strong>8. CameoGlobal</strong>: {myData[2].CameoGlobal}{" "}
+                      <strong>(2023)</strong>.
+                    </div>
+                    <div>
+                      <strong>9. Alorica</strong>: {myData[2].Alorica}{" "}
+                      <strong>(2025)</strong>.
+                    </div>
+                    <div>
+                      <strong>10. Concentrix (Rehire)</strong>:{" "}
+                      {myData[2].Concentrix2} <strong>(2025)</strong>.
+                    </div>
+                    <div>
+                      <strong>11. Startek</strong>: {myData[2].Startek}{" "}
+                      <strong>(2026)</strong>.
+                    </div>
+                    <div>
+                      <strong>12. Alorica (Rehire)</strong>:{" "}
+                      {myData[2].Alorica2} <strong>(2026)</strong>.
+                    </div>
                   </div>
                 )}
                 {menuitem.id === "3" && (
                   <div className="items-menu">
-                    <div>• Space: {myData[3].Space}</div>
                     <div>
-                      • Proxima Calculator: {myData[3].ProximaCalculator}
+                      <strong>Space</strong>: {myData[3].Space}
                     </div>
-                    <div>• Portfolio Website: {myData[3].PortfolioWebsite}</div>
+                    <div>
+                      <strong>Proxima Calculator</strong>:{" "}
+                      {myData[3].ProximaCalculator}
+                    </div>
+                    <div>
+                      <strong>Portfolio Website</strong>:{" "}
+                      {myData[3].PortfolioWebsite}
+                    </div>
                   </div>
                 )}
                 {menuitem.id === "4" && (
                   <div className="items-menu">
-                    <div>• PAN: {myData[4].pan}</div>
-                    <div>• Aadhar: {myData[4].aadhar}</div>
-                    <div>• Phone: {myData[4].phone}</div>
-                    <div>• Email: {myData[4].email}</div>
+                    <div>
+                      <strong>PAN</strong>: {myData[4].pan}
+                    </div>
+                    <div>
+                      <strong>Aadhar</strong>: {myData[4].aadhar}
+                    </div>
+                    <div>
+                      <strong>Phone</strong>: {myData[4].phone}
+                    </div>
+                    <div>
+                      <strong>Email</strong>: {myData[4].email}
+                    </div>
                   </div>
                 )}
                 <div className="placeholder"></div>
