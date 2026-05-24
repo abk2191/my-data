@@ -1,0 +1,53 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+
+  gap: 100px;
+  padding-top: 40px;
+}
+
+.menu-label {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.fa-minus,
+.fa-plus {
+  cursor: pointer;
+}
+
+.items-menu {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  line-height: 1.6;
+  animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.3s; /* don't forget to set a duration! */
+  margin-left: 200px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.placeholder {
+  height: 25px;
+}
