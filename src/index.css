@@ -38,7 +38,7 @@ body {
   gap: 10px;
   padding: 10px;
   line-height: 1.6;
-  animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  animation: bounceInDown; /* referring directlykeyframe declaration */
   animation-duration: 0.3s; /* don't forget to set a duration! */
   margin-left: 200px;
 }
