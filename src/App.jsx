@@ -120,9 +120,9 @@ function App() {
                   <div className="items-menu">
                     <div>• Space: {myData[3].Space}</div>
                     <div>
-                      • ProximaCalculator: {myData[3].ProximaCalculator}
+                      • Proxima Calculator: {myData[3].ProximaCalculator}
                     </div>
-                    <div>• PortfolioWebsite: {myData[3].PortfolioWebsite}</div>
+                    <div>• Portfolio Website: {myData[3].PortfolioWebsite}</div>
                   </div>
                 )}
                 {menuitem.id === "4" && (
