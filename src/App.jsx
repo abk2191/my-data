@@ -92,35 +92,35 @@ function App() {
                 {menuitem.id === "0" && (
                   <div className="items-menu">
                     <p>
-                      <strong>Name</strong>: {myData[0].name}.
+                      <strong>🏷 Name</strong>: {myData[0].name}.
                     </p>
                     <p>
-                      <strong>DOB</strong>: {myData[0].dob}.
+                      <strong>🗓 DOB</strong>: {myData[0].dob}.
                     </p>
                     <p>
-                      <strong>Native Place</strong>: {myData[0].nativePlace}.
+                      <strong>📍 Native Place</strong>: {myData[0].nativePlace}.
                     </p>
                     <p>
-                      <strong>Father's Name</strong>: {myData[0].fname}.
+                      <strong>👨 Father's Name</strong>: {myData[0].fname}.
                     </p>
                     <p>
-                      <strong>Nationality</strong>: {myData[0].nationality}.
+                      <strong>🇮🇳 Nationality</strong>: {myData[0].nationality}.
                     </p>
                   </div>
                 )}
                 {menuitem.id === "1" && (
                   <div className="items-menu">
                     <p>
-                      <strong>{myData[1].ins}.</strong>
+                      🏛 <strong>{myData[1].ins}.</strong>
                     </p>
                     <p>
-                      <strong>Year of passing: {myData[1].year}.</strong>
+                      <strong>🎓 Year of passing: {myData[1].year}.</strong>
                     </p>
                     <p>
-                      <strong>Domain: {myData[1].stream}.</strong>
+                      <strong>📖 Domain: {myData[1].stream}.</strong>
                     </p>
                     <p>
-                      <strong>CGPA: {myData[1].cgpa}.</strong>
+                      <strong>🎯 CGPA: {myData[1].cgpa}.</strong>
                     </p>
                   </div>
                 )}
