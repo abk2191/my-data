@@ -62,7 +62,7 @@ function App() {
       <div className="main-container">
         <div className="banner">
           <h1>ABHISHEK KABI</h1>
-          <p>Full-Stack Developer</p>
+          <p>Full-Stack Developer.</p>
           
         </div>
         <hr className="hr-line" />
