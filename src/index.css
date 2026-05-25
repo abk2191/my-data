@@ -55,7 +55,7 @@ body {
   animation-duration: 0.3s; /* don't forget to set a duration! */
   margin-left: 100px;
   margin-top: 20px;
-  color: maroon;
+  color: #000033;
 }
 
 p {
