@@ -62,8 +62,8 @@ function App() {
       <div className="main-container">
         <div className="banner">
           <h1>ABHISHEK KABI</h1>
-          <p>Full-Stack React / React Native Solution Architech.</p>
-          <p style={{ marginTop: "20px" }}>"Listen to the noise within..."</p>
+          <p>Full-Stack Developer</p>
+          
         </div>
         <hr className="hr-line" />
         {menuLabels.map((menuitem, index) => (
