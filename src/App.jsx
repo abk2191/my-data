@@ -67,7 +67,14 @@ function App() {
         {menuLabels.map((menuitem, index) => (
           <div key={index} className="menu-label">
             <div className="menu">
-              <p className="menu-labels"> {menuitem.Label}</p>
+              <p
+                className="menu-labels"
+                onClick={() => expandMenu(menuitem)}
+                style={{ cursor: "pointer" }}
+              >
+                {" "}
+                {menuitem.Label}
+              </p>
               {activeMenuId === menuitem.id ? (
                 <div className="icon-wrapper">
                   <i
