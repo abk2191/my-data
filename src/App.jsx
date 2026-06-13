@@ -54,6 +54,7 @@ function App() {
       aadhar: "8447 6563 2006",
       phone: "9332522166 / 7384407795",
       email: "abhishek.kabi.21@gmail.com",
+      uan: "101187024470",
     },
   ];
 
@@ -203,6 +204,9 @@ function App() {
                     </div>
                     <div>
                       <strong>Aadhar</strong>: {myData[4].aadhar}
+                    </div>
+                    <div>
+                      <strong>UAN</strong>: {myData[4].uan}
                     </div>
                     <div>
                       <strong>Phone</strong>: {myData[4].phone}
