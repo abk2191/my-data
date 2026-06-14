@@ -98,86 +98,86 @@ function App() {
                 {menuitem.id === "0" && (
                   <div className="items-menu">
                     <p>
-                      <strong>Name</strong>: {myData[0].name}.
+                      👤 <strong>Name</strong>: {myData[0].name}.
                     </p>
                     <p>
-                      <strong>DOB</strong>: {myData[0].dob}.
+                      🎂 <strong>DOB</strong>: {myData[0].dob}.
                     </p>
                     <p>
-                      <strong>Native Place</strong>: {myData[0].nativePlace}.
+                      📍 <strong>Native Place</strong>: {myData[0].nativePlace}.
                     </p>
                     <p>
-                      <strong>Father's Name</strong>: {myData[0].fname}.
+                      👨‍👦 <strong>Father's Name</strong>: {myData[0].fname}.
                     </p>
                     <p>
-                      <strong>Nationality</strong>: {myData[0].nationality}.
+                      🌍 <strong>Nationality</strong>: {myData[0].nationality}.
                     </p>
                   </div>
                 )}
                 {menuitem.id === "1" && (
                   <div className="items-menu">
                     <p>
-                      <strong>{myData[1].ins}.</strong>
+                      🏫 <strong>{myData[1].ins}.</strong>
                     </p>
                     <p>
-                      <strong>Year of passing: {myData[1].year}.</strong>
+                      📅 <strong>Year of passing: {myData[1].year}.</strong>
                     </p>
                     <p>
-                      <strong>Domain: {myData[1].stream}.</strong>
+                      💻 <strong>Domain: {myData[1].stream}.</strong>
                     </p>
                     <p>
-                      <strong>CGPA: {myData[1].cgpa}.</strong>
+                      📊 <strong>CGPA: {myData[1].cgpa}.</strong>
                     </p>
                   </div>
                 )}
                 {menuitem.id === "2" && (
                   <div className="items-menu">
                     <div>
-                      <strong>1. Aegis</strong>: {myData[2].Aegis}{" "}
+                      💼 <strong>1. Aegis</strong>: {myData[2].Aegis}{" "}
                       <strong>(2017)</strong>.
                     </div>
                     <div>
-                      <strong>2. DXC</strong>: {myData[2].DXC}{" "}
+                      💼 <strong>2. DXC</strong>: {myData[2].DXC}{" "}
                       <strong>(2018)</strong>.
                     </div>
                     <div>
-                      <strong>3. HP</strong>: {myData[2].HP}{" "}
+                      💼 <strong>3. HP</strong>: {myData[2].HP}{" "}
                       <strong>(2018)</strong>.
                     </div>
                     <div>
-                      <strong>4. Quinnox</strong>: {myData[2].Quinnox}{" "}
+                      💼 <strong>4. Quinnox</strong>: {myData[2].Quinnox}{" "}
                       <strong>(2019)</strong>.
                     </div>
                     <div>
-                      <strong>5. Concentrix</strong>: {myData[2].Concentrix}{" "}
+                      💼 <strong>5. Concentrix</strong>: {myData[2].Concentrix}{" "}
                       <strong>(2019)</strong>.
                     </div>
                     <div>
-                      <strong>6. Teleperformance</strong>:{" "}
+                      💼 <strong>6. Teleperformance</strong>:{" "}
                       {myData[2].Teleperformance} <strong>(2020)</strong>.
                     </div>
                     <div>
-                      <strong>7. Amazon</strong>: {myData[2].Amazon}{" "}
+                      💼 <strong>7. Amazon</strong>: {myData[2].Amazon}{" "}
                       <strong>(2020)</strong>.
                     </div>
                     <div>
-                      <strong>8. CameoGlobal</strong>: {myData[2].CameoGlobal}{" "}
-                      <strong>(2023)</strong>.
+                      💼 <strong>8. CameoGlobal</strong>:{" "}
+                      {myData[2].CameoGlobal} <strong>(2023)</strong>.
                     </div>
                     <div>
-                      <strong>9. Alorica</strong>: {myData[2].Alorica}{" "}
+                      💼 <strong>9. Alorica</strong>: {myData[2].Alorica}{" "}
                       <strong>(2025)</strong>.
                     </div>
                     <div>
-                      <strong>10. Concentrix (Rehire)</strong>:{" "}
+                      🔄 <strong>10. Concentrix (Rehire)</strong>:{" "}
                       {myData[2].Concentrix2} <strong>(2025)</strong>.
                     </div>
                     <div>
-                      <strong>11. Startek</strong>: {myData[2].Startek}{" "}
+                      💼 <strong>11. Startek</strong>: {myData[2].Startek}{" "}
                       <strong>(2026)</strong>.
                     </div>
                     <div>
-                      <strong>12. Alorica (Rehire)</strong>:{" "}
+                      🔄 <strong>12. Alorica (Rehire)</strong>:{" "}
                       {myData[2].Alorica2} <strong>(2026)</strong>.
                     </div>
                   </div>
@@ -185,14 +185,14 @@ function App() {
                 {menuitem.id === "3" && (
                   <div className="items-menu">
                     <div>
-                      <strong>Space</strong>: {myData[3].Space}
+                      🚀 <strong>Space</strong>: {myData[3].Space}
                     </div>
                     <div>
-                      <strong>Proxima Calculator</strong>:{" "}
+                      🧮 <strong>Proxima Calculator</strong>:{" "}
                       {myData[3].ProximaCalculator}
                     </div>
                     <div>
-                      <strong>Portfolio Website</strong>:{" "}
+                      🌐 <strong>Portfolio Website</strong>:{" "}
                       {myData[3].PortfolioWebsite}
                     </div>
                   </div>
@@ -200,19 +200,19 @@ function App() {
                 {menuitem.id === "4" && (
                   <div className="items-menu">
                     <div>
-                      <strong>PAN</strong>: {myData[4].pan}
+                      🆔 <strong>PAN</strong>: {myData[4].pan}
                     </div>
                     <div>
-                      <strong>Aadhar</strong>: {myData[4].aadhar}
+                      🪪 <strong>Aadhar</strong>: {myData[4].aadhar}
                     </div>
                     <div>
-                      <strong>UAN</strong>: {myData[4].uan}
+                      📇 <strong>UAN</strong>: {myData[4].uan}
                     </div>
                     <div>
-                      <strong>Phone</strong>: {myData[4].phone}
+                      📞 <strong>Phone</strong>: {myData[4].phone}
                     </div>
                     <div>
-                      <strong>Email</strong>: {myData[4].email}
+                      ✉️ <strong>Email</strong>: {myData[4].email}
                     </div>
                   </div>
                 )}

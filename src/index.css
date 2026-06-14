@@ -206,7 +206,7 @@ p {
 @media (max-width: 600px) {
   .items-menu {
     width: 260px;
-    margin-left: 40px;
+    margin-left: 125px;
   }
 
   .menu-label {
